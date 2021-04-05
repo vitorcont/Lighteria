@@ -7,12 +7,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     imgBkg: {
-        height: 30,
         width: Dimensions.get('window').width,
         height: "100%",
     },
     BkgContainer: {
-
+        flex: 6
     },
     flash: {
         width: 24,

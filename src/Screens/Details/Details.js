@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
     SafeAreaView,
     FlatList,
@@ -18,7 +18,7 @@ const Details = ({ route }) => {
         preco,
         id } = route.params;
     return (
-        <View>
+        <>
             <Background />
             <Description
                 imagem={imagem}
@@ -29,7 +29,7 @@ const Details = ({ route }) => {
                 estudio={estudio}
                 id={id}
             />
-        </View>
+        </>
 
     );
 };

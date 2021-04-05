@@ -14,13 +14,15 @@ const Background = () => {
                 source={imgSrc}
                 style={styles.imgBkg}>
                 <View style={styles.header}>
-                    <Image
-                        source={require('../../assets/images/flecha-esquerda.png')}
-                        style={styles.flash} />
+                    <TouchableOpacity onPress={() => navigation.goBack()}>
+                        <Image
+                            source={require('../../assets/images/flecha-esquerda.png')}
+                            style={styles.flash}
+                        />
+                    </TouchableOpacity>
                     <View style={styles.CartContainer}>
                         <Cart />
                     </View>
-
                 </View>
             </ImageBackground>
         </View >
